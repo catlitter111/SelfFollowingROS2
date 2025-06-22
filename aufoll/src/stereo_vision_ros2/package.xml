@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>stereo_vision_ros2</name>
+  <version>1.0.0</version>
+  <description>ROS2双目立体视觉功能包 - 基于OpenCV和Open3D的双目立体视觉系统</description>
+  <maintainer email="team@stereo-vision.com">Stereo Vision Team</maintainer>
+  <license>MIT</license>
+
+  <!-- ROS2核心依赖 -->
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+  
+  <!-- Python依赖 -->
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>python3-opencv-contrib</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-scipy</exec_depend>
+  <exec_depend>python3-pil</exec_depend>
+  <exec_depend>python3-sklearn</exec_depend>
+  <exec_depend>python3-matplotlib</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>python3-setuptools</exec_depend>
+  
+  <!-- 3D计算和可视化依赖 -->
+  <exec_depend>python3-open3d</exec_depend>
+  
+  <!-- 可选的高性能计算依赖 -->
+  <exec_depend>python3-numba</exec_depend>
+  <exec_depend>python3-psutil</exec_depend>
+  
+  <!-- 图像处理和计算机视觉扩展 -->
+  <exec_depend>python3-concurrent-futures</exec_depend>
+  <exec_depend>python3-threading</exec_depend>
+  
+  <!-- 接口功能包依赖 -->
+  <depend>stereo_vision_interfaces</depend>
+  
+  <!-- 测试依赖 -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package> 
