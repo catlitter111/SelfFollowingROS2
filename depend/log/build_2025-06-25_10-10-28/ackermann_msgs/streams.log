@@ -1,0 +1,259 @@
+[0.033s] Invoking command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /userdata/SelfFollowingROS2/depend/src/ackermann_msgs-ros2 -DCMAKE_INSTALL_PREFIX=/userdata/SelfFollowingROS2/depend/install/ackermann_msgs
+[0.301s] -- The C compiler identification is GNU 11.4.0
+[0.511s] -- The CXX compiler identification is GNU 11.4.0
+[0.531s] -- Detecting C compiler ABI info
+[0.695s] -- Detecting C compiler ABI info - done
+[0.734s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.738s] -- Detecting C compile features
+[0.739s] -- Detecting C compile features - done
+[0.746s] -- Detecting CXX compiler ABI info
+[0.919s] -- Detecting CXX compiler ABI info - done
+[0.941s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.942s] -- Detecting CXX compile features
+[0.943s] -- Detecting CXX compile features - done
+[0.954s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.433s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.707s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.712s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.737s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.813s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.871s] -- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+[2.513s] -- Found ament_cmake_cppcheck: 0.12.12 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[2.516s] -- Found ament_cmake_cpplint: 0.12.12 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[2.518s] -- Found ament_cmake_uncrustify: 0.12.12 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[2.521s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.050s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.864s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.931s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.944s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.045s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.046s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.047s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.047s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[4.114s] -- Found PythonExtra: .so  
+[4.204s] -- Found ament_cmake_flake8: 0.12.12 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[4.207s] -- Found ament_cmake_pep257: 0.12.12 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[4.227s] -- Configuring done
+[4.281s] -- Generating done
+[4.299s] -- Build files have been written to: /userdata/SelfFollowingROS2/depend/build/ackermann_msgs
+[4.316s] Invoked command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /userdata/SelfFollowingROS2/depend/src/ackermann_msgs-ros2 -DCMAKE_INSTALL_PREFIX=/userdata/SelfFollowingROS2/depend/install/ackermann_msgs
+[4.319s] Invoking command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /userdata/SelfFollowingROS2/depend/build/ackermann_msgs -- -j8 -l8
+[4.448s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.477s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.518s] [  5%] Built target ament_cmake_python_copy_ackermann_msgs
+[5.093s] running egg_info
+[5.095s] creating ackermann_msgs.egg-info
+[5.096s] writing ackermann_msgs.egg-info/PKG-INFO
+[5.096s] writing dependency_links to ackermann_msgs.egg-info/dependency_links.txt
+[5.097s] writing top-level names to ackermann_msgs.egg-info/top_level.txt
+[5.097s] writing manifest file 'ackermann_msgs.egg-info/SOURCES.txt'
+[5.099s] reading manifest file 'ackermann_msgs.egg-info/SOURCES.txt'
+[5.099s] writing manifest file 'ackermann_msgs.egg-info/SOURCES.txt'
+[5.174s] [  5%] Built target ament_cmake_python_build_ackermann_msgs_egg
+[5.385s] [  7%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_generator_c.dir/rosidl_generator_c/ackermann_msgs/msg/detail/ackermann_drive__functions.c.o[0m
+[5.423s] [ 10%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_generator_c.dir/rosidl_generator_c/ackermann_msgs/msg/detail/ackermann_drive_stamped__functions.c.o[0m
+[5.585s] [ 12%] [32m[1mLinking C shared library libackermann_msgs__rosidl_generator_c.so[0m
+[5.701s] [ 12%] Built target ackermann_msgs__cpp
+[5.707s] [ 12%] Built target ackermann_msgs__rosidl_generator_c
+[5.749s] [ 15%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.756s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.783s] [ 20%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.787s] [ 23%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.804s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.812s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.107s] [ 30%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ackermann_msgs/msg/detail/ackermann_drive__type_support.c.o[0m
+[7.120s] [ 33%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.c.o[0m
+[7.136s] [ 35%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ackermann_msgs/msg/detail/dds_fastrtps/ackermann_drive_stamped__type_support.cpp.o[0m
+[7.157s] [ 38%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ackermann_msgs/msg/detail/dds_fastrtps/ackermann_drive__type_support.cpp.o[0m
+[7.347s] [ 41%] [32m[1mLinking C shared library libackermann_msgs__rosidl_typesupport_introspection_c.so[0m
+[7.417s] [ 43%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ackermann_msgs/msg/ackermann_drive__type_support.cpp.o[0m
+[7.419s] [ 46%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ackermann_msgs/msg/ackermann_drive_stamped__type_support.cpp.o[0m
+[7.525s] [ 48%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ackermann_msgs/msg/detail/ackermann_drive__type_support_c.cpp.o[0m
+[7.557s] [ 48%] Built target ackermann_msgs__rosidl_typesupport_introspection_c
+[7.610s] [ 51%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support_c.cpp.o[0m
+[7.897s] [ 53%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ackermann_msgs/msg/detail/ackermann_drive__type_support.cpp.o[0m
+[8.132s] [ 56%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.cpp.o[0m
+[8.375s] [ 58%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ackermann_msgs/msg/ackermann_drive__type_support.cpp.o[0m
+[8.483s] [ 61%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ackermann_msgs/msg/ackermann_drive_stamped__type_support.cpp.o[0m
+[8.511s] [ 64%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_cpp.so[0m
+[8.569s] [ 66%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_c.so[0m
+[8.656s] [ 66%] Built target ackermann_msgs__rosidl_typesupport_cpp
+[8.755s] [ 66%] Built target ackermann_msgs__rosidl_typesupport_c
+[8.785s] [ 69%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[8.937s] [ 71%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[9.029s] [ 71%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_c
+[9.077s] [ 74%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[9.131s] [ 74%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_cpp
+[9.258s] [ 74%] Built target ackermann_msgs__rosidl_typesupport_introspection_cpp
+[9.323s] [ 74%] Built target ackermann_msgs
+[9.377s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[10.299s] [ 76%] Built target ackermann_msgs__py
+[10.353s] [ 82%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_generator_py.dir/rosidl_generator_py/ackermann_msgs/msg/_ackermann_drive_stamped_s.c.o[0m
+[10.353s] [ 82%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_generator_py.dir/rosidl_generator_py/ackermann_msgs/msg/_ackermann_drive_s.c.o[0m
+[10.502s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/ackermann_msgs/libackermann_msgs__rosidl_generator_py.so[0m
+[10.618s] [ 84%] Built target ackermann_msgs__rosidl_generator_py
+[10.653s] [ 87%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[10.680s] [ 89%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[10.689s] [ 92%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[10.806s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[10.889s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[10.903s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[10.919s] [100%] Built target ackermann_msgs__rosidl_typesupport_c__pyext
+[10.978s] [100%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_c__pyext
+[10.990s] [100%] Built target ackermann_msgs__rosidl_typesupport_introspection_c__pyext
+[11.031s] Invoked command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /userdata/SelfFollowingROS2/depend/build/ackermann_msgs -- -j8 -l8
+[11.038s] Invoking command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /userdata/SelfFollowingROS2/depend/build/ackermann_msgs
+[11.066s] -- Install configuration: ""
+[11.067s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ament_index/resource_index/rosidl_interfaces/ackermann_msgs
+[11.068s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs
+[11.068s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg
+[11.068s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/rosidl_generator_c__visibility_control.h
+[11.068s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/ackermann_drive.h
+[11.069s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail
+[11.069s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__type_support.h
+[11.069s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__functions.c
+[11.069s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.h
+[11.070s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__struct.h
+[11.070s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__functions.h
+[11.070s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__functions.h
+[11.071s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__functions.c
+[11.071s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__struct.h
+[11.071s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/ackermann_drive_stamped.h
+[11.071s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/environment/library_path.sh
+[11.071s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/environment/library_path.dsv
+[11.073s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_generator_c.so
+[11.073s] -- Set runtime path of "/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_generator_c.so" to ""
+[11.074s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs
+[11.074s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg
+[11.075s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[11.075s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail
+[11.075s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__rosidl_typesupport_fastrtps_c.h
+[11.076s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__rosidl_typesupport_fastrtps_c.h
+[11.076s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_fastrtps_c.so
+[11.077s] -- Set runtime path of "/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[11.077s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs
+[11.077s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg
+[11.078s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[11.078s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail
+[11.079s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__type_support.c
+[11.079s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.c
+[11.079s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__rosidl_typesupport_introspection_c.h
+[11.079s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__rosidl_typesupport_introspection_c.h
+[11.079s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_introspection_c.so
+[11.080s] -- Set runtime path of "/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_introspection_c.so" to ""
+[11.080s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_c.so
+[11.081s] -- Set runtime path of "/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_c.so" to ""
+[11.081s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs
+[11.082s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg
+[11.082s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[11.086s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/ackermann_drive_stamped.hpp
+[11.086s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail
+[11.087s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__traits.hpp
+[11.087s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__struct.hpp
+[11.087s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__builder.hpp
+[11.087s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__builder.hpp
+[11.088s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__type_support.hpp
+[11.088s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.hpp
+[11.089s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__traits.hpp
+[11.089s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__struct.hpp
+[11.090s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/ackermann_drive.hpp
+[11.090s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs
+[11.090s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg
+[11.090s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail
+[11.091s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/dds_fastrtps
+[11.092s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__rosidl_typesupport_fastrtps_cpp.hpp
+[11.092s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[11.093s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[11.093s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_fastrtps_cpp.so
+[11.094s] -- Set runtime path of "/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[11.094s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs
+[11.095s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg
+[11.095s] -- Up-to-date: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail
+[11.096s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.cpp
+[11.096s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive_stamped__rosidl_typesupport_introspection_cpp.hpp
+[11.096s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__type_support.cpp
+[11.097s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/include/ackermann_msgs/ackermann_msgs/msg/detail/ackermann_drive__rosidl_typesupport_introspection_cpp.hpp
+[11.097s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_introspection_cpp.so
+[11.098s] -- Set runtime path of "/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[11.098s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_cpp.so
+[11.099s] -- Set runtime path of "/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_cpp.so" to ""
+[11.099s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/environment/pythonpath.sh
+[11.100s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/environment/pythonpath.dsv
+[11.100s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs-2.0.2-py3.10.egg-info
+[11.101s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs-2.0.2-py3.10.egg-info/PKG-INFO
+[11.102s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs-2.0.2-py3.10.egg-info/SOURCES.txt
+[11.102s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs-2.0.2-py3.10.egg-info/dependency_links.txt
+[11.102s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs-2.0.2-py3.10.egg-info/top_level.txt
+[11.102s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs
+[11.102s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/__init__.py
+[11.109s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[11.110s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg
+[11.110s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/__init__.py
+[11.110s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/_ackermann_drive_stamped.py
+[11.112s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/_ackermann_drive.py
+[11.113s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/_ackermann_drive_s.c
+[11.113s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/_ackermann_drive_stamped_s.c
+[11.114s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_c.c
+[11.115s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[11.115s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/libackermann_msgs__rosidl_generator_py.so
+[11.115s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[11.115s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[11.115s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[11.156s] Listing '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs'...
+[11.156s] Compiling '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/__init__.py'...
+[11.156s] Listing '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg'...
+[11.156s] Compiling '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/__init__.py'...
+[11.157s] Compiling '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/_ackermann_drive.py'...
+[11.157s] Compiling '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/msg/_ackermann_drive_stamped.py'...
+[11.173s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[11.173s] -- Set runtime path of "/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[11.173s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[11.173s] -- Set runtime path of "/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[11.173s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[11.173s] -- Set runtime path of "/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/local/lib/python3.10/dist-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[11.173s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_generator_py.so
+[11.174s] -- Set runtime path of "/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/libackermann_msgs__rosidl_generator_py.so" to ""
+[11.174s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/msg/AckermannDrive.idl
+[11.175s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/msg/AckermannDriveStamped.idl
+[11.175s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/msg/AckermannDrive.msg
+[11.175s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/msg/AckermannDriveStamped.msg
+[11.176s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ament_index/resource_index/package_run_dependencies/ackermann_msgs
+[11.192s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ament_index/resource_index/parent_prefix_path/ackermann_msgs
+[11.192s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/environment/ament_prefix_path.sh
+[11.192s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/environment/ament_prefix_path.dsv
+[11.192s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/environment/path.sh
+[11.192s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/environment/path.dsv
+[11.192s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/local_setup.bash
+[11.192s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/local_setup.sh
+[11.193s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/local_setup.zsh
+[11.193s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/local_setup.dsv
+[11.193s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/package.dsv
+[11.193s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ament_index/resource_index/packages/ackermann_msgs
+[11.193s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_generator_cExport.cmake
+[11.193s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_generator_cExport-noconfig.cmake
+[11.193s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[11.194s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[11.194s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_introspection_cExport.cmake
+[11.194s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[11.194s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_cExport.cmake
+[11.194s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[11.194s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_generator_cppExport.cmake
+[11.194s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[11.194s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[11.194s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[11.194s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[11.195s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_cppExport.cmake
+[11.195s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[11.195s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_generator_pyExport.cmake
+[11.195s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/export_ackermann_msgs__rosidl_generator_pyExport-noconfig.cmake
+[11.195s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/rosidl_cmake-extras.cmake
+[11.195s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.195s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.196s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[11.196s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[11.196s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[11.197s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[11.197s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgsConfig.cmake
+[11.197s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgsConfig-version.cmake
+[11.197s] -- Installing: /userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/package.xml
+[11.197s] Invoked command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /userdata/SelfFollowingROS2/depend/build/ackermann_msgs

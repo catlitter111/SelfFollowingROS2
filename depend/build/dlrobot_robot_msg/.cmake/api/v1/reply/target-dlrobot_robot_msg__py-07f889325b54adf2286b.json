@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg/dlrobot_robot_msg__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "dlrobot_robot_msg::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "dlrobot_robot_msg__py::@18582346d5b937e0354b",
+	"name" : "dlrobot_robot_msg__py",
+	"paths" : 
+	{
+		"build" : "dlrobot_robot_msg__py",
+		"source" : "/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg/dlrobot_robot_msg__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg/dlrobot_robot_msg__py/CMakeFiles/dlrobot_robot_msg__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg/dlrobot_robot_msg__py/CMakeFiles/dlrobot_robot_msg__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg/rosidl_generator_py/dlrobot_robot_msg/_dlrobot_robot_msg_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

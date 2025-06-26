@@ -1,0 +1,244 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# ROS2项目常用命令快速参考
+
+## 快速启动命令
+
+### 完整系统启动
+```bash
+# 1. 激活依赖环境
+cd depend && source install/setup.bash
+
+# 2. 激活主环境  
+cd SelfFollowingROS2 && source install/setup.bash
+
+# 3. 启动立体视觉系统
+ros2 launch stereo_vision_ros2 stereo_vision.launch.py
+
+# 4. 启动机器人底盘 (另一个终端)
+ros2 launch turn_on_dlrobot_robot tank.launch.py
+```
+
+### 单独启动核心节点
+```bash
+# RKNN检测节点
+ros2 run stereo_vision_ros2 rknn_detect_node
+
+# 机器人驱动节点
+ros2 run turn_on_dlrobot_robot dlrobot_robot
+
+# 速度转换节点
+ros2 run turn_on_dlrobot_robot cmd_vel_to_ackermann_drive.py
+```
+
+## 构建和环境设置
+
+### 全量构建
+```bash
+# 构建所有依赖
+cd depend
+colcon build
+source install/setup.bash
+
+# 构建主工作空间
+cd ../SelfFollowingROS2
+colcon build
+source install/setup.bash
+```
+
+### 选择性构建
+```bash
+# 构建特定包
+colcon build --packages-select stereo_vision_ros2
+colcon build --packages-select turn_on_dlrobot_robot
+colcon build --packages-select stereo_vision_interfaces
+
+# 构建包及其依赖
+colcon build --packages-up-to stereo_vision_ros2
+```
+
+### 清理构建
+```bash
+# 清理构建文件
+rm -rf build/ install/ log/
+
+# 重新构建
+colcon build
+```
+
+## 系统监控和调试
+
+### 节点和话题检查
+```bash
+# 查看活动节点
+ros2 node list
+
+# 查看话题列表
+ros2 topic list
+
+# 查看服务列表
+ros2 service list
+
+# 查看参数列表
+ros2 param list
+```
+
+### 数据监控
+```bash
+# 监控检测结果
+ros2 topic echo /detection_results
+
+# 监控速度命令
+ros2 topic echo /cmd_vel
+
+# 监控阿克曼驱动命令
+ros2 topic echo /ackermann_cmd
+
+# 监控机器人位置
+ros2 topic echo /robot_position
+
+# 监控里程计
+ros2 topic echo /odom
+```
+
+### 服务测试
+```bash
+# 测试图像检测服务
+ros2 service call /detect_image_with_confidence stereo_vision_interfaces/srv/DetectImageWithConfidence
+
+# 测试身体位置服务
+ros2 service call /determine_body_position stereo_vision_interfaces/srv/DetermineBodyPosition
+
+# 测试距离服务
+ros2 service call /get_distance stereo_vision_interfaces/srv/GetDistance
+```
+
+## 系统诊断
+
+### 健康检查
+```bash
+# ROS2系统诊断
+ros2 doctor
+
+# 检查节点信息
+ros2 node info <node_name>
+
+# 检查话题信息
+ros2 topic info <topic_name>
+
+# 检查服务类型
+ros2 service type <service_name>
+```
+
+### 日志和调试
+```bash
+# 启用调试日志
+export RCUTILS_LOGGING_SEVERITY=DEBUG
+
+# 查看节点日志
+ros2 run <package> <node> --ros-args --log-level debug
+
+# 记录数据包
+ros2 bag record /topic1 /topic2
+
+# 播放数据包
+ros2 bag play <bag_file>
+```
+
+## 可视化工具
+
+### RViz可视化
+```bash
+# 启动RViz
+rviz2
+
+# 使用项目配置文件
+rviz2 -d SelfFollowingROS2/src/stereo_vision_ros2/config/stereo_vision.rviz
+```
+
+### 图形化工具
+```bash
+# 节点图可视化
+rqt_graph
+
+# 话题监控
+rqt_topic
+
+# 服务调用器
+rqt_service_caller
+
+# 参数重配置
+rqt_reconfigure
+```
+
+## 测试和验证
+
+### 运行项目测试
+```bash
+# 系统集成测试
+./SelfFollowingROS2/test_system.sh
+
+# 验证修复
+python3 SelfFollowingROS2/validate_fixes.py
+
+# 包特定测试
+cd SelfFollowingROS2/src/stereo_vision_ros2/test
+python3 test_rknn_detect.py
+python3 test_services.py
+```
+
+### 性能测试
+```bash
+# 话题频率测试
+ros2 topic hz /detection_results
+
+# 延迟测试  
+ros2 topic delay /cmd_vel
+
+# 带宽监控
+ros2 topic bw /image_raw
+```
+
+## 故障排除
+
+### 常见问题解决
+```bash
+# 串口权限问题
+sudo chmod 666 /dev/ttyUSB0
+sudo usermod -a -G dialout $USER
+
+# 环境变量问题
+echo $ROS_DOMAIN_ID
+echo $AMENT_PREFIX_PATH
+
+# 依赖问题检查
+rosdep check --from-paths src --ignore-src -r
+```
+
+### 硬件检查
+```bash
+# 查看USB设备
+lsusb
+
+# 查看串口设备
+ls /dev/tty*
+
+# 摄像头设备检查
+ls /dev/video*
+
+# 设备权限检查
+ls -l /dev/ttyUSB* /dev/video*
+```
+
+## 快速参考文件路径
+
+- 主要启动文件: [stereo_vision.launch.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/launch/stereo_vision.launch.py)
+- 机器人启动文件: [tank.launch.py](mdc:SelfFollowingROS2/src/turn_on_dlrobot_robot/launch/tank.launch.py)
+- 系统测试脚本: [test_system.sh](mdc:SelfFollowingROS2/test_system.sh)
+- RViz配置: [stereo_vision.rviz](mdc:SelfFollowingROS2/src/stereo_vision_ros2/config/stereo_vision.rviz)
+- RKNN模型: [best3.rknn](mdc:SelfFollowingROS2/src/stereo_vision_ros2/data/best3.rknn)
+
+

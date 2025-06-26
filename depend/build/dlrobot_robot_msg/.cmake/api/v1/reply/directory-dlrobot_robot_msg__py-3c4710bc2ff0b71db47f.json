@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "dlrobot_robot_msg__py",
+		"source" : "/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg/dlrobot_robot_msg__py"
+	}
+}

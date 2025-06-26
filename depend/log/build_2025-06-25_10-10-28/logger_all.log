@@ -1,0 +1,290 @@
+[0.305s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.305s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f905f7490>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f905f6f20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f905f6f20>>)
+[0.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.659s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/userdata/SelfFollowingROS2/depend'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann_msgs-ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann_msgs-ros2) by extension 'ignore'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann_msgs-ros2) by extension 'ignore_ament_install'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann_msgs-ros2) by extensions ['colcon_pkg']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann_msgs-ros2) by extension 'colcon_pkg'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann_msgs-ros2) by extensions ['colcon_meta']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann_msgs-ros2) by extension 'colcon_meta'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann_msgs-ros2) by extensions ['ros']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/ackermann_msgs-ros2) by extension 'ros'
+[0.691s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ackermann_msgs-ros2' with type 'ros.ament_cmake' and name 'ackermann_msgs'
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/dlrobot_robot_msg) by extensions ['ignore', 'ignore_ament_install']
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/dlrobot_robot_msg) by extension 'ignore'
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/dlrobot_robot_msg) by extension 'ignore_ament_install'
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/dlrobot_robot_msg) by extensions ['colcon_pkg']
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/dlrobot_robot_msg) by extension 'colcon_pkg'
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/dlrobot_robot_msg) by extensions ['colcon_meta']
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/dlrobot_robot_msg) by extension 'colcon_meta'
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/dlrobot_robot_msg) by extensions ['ros']
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/dlrobot_robot_msg) by extension 'ros'
+[0.692s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dlrobot_robot_msg' with type 'ros.ament_cmake' and name 'dlrobot_robot_msg'
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_ros2) by extension 'ignore'
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_ros2) by extension 'ignore_ament_install'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_ros2) by extensions ['colcon_pkg']
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_ros2) by extension 'colcon_pkg'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_ros2) by extensions ['colcon_meta']
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_ros2) by extension 'colcon_meta'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_ros2) by extensions ['ros']
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_ros2) by extension 'ros'
+[0.694s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_ros2' with type 'ros.ament_cmake' and name 'serial'
+[0.694s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.694s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.694s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.694s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.694s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.737s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[0.745s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'ackermann_msgs' build argument 'cmake_args' from command line to 'None'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'ackermann_msgs' build argument 'cmake_target' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ackermann_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ackermann_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ackermann_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ackermann_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ackermann_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ackermann_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ackermann_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.841s] DEBUG:colcon.colcon_core.verb:Building package 'ackermann_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs', 'merge_install': False, 'path': '/userdata/SelfFollowingROS2/depend/src/ackermann_msgs-ros2', 'symlink_install': False, 'test_result_base': None}
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'dlrobot_robot_msg' build argument 'cmake_args' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'dlrobot_robot_msg' build argument 'cmake_target' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'dlrobot_robot_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'dlrobot_robot_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'dlrobot_robot_msg' build argument 'cmake_clean_first' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'dlrobot_robot_msg' build argument 'cmake_force_configure' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'dlrobot_robot_msg' build argument 'ament_cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'dlrobot_robot_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'dlrobot_robot_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.842s] DEBUG:colcon.colcon_core.verb:Building package 'dlrobot_robot_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg', 'merge_install': False, 'path': '/userdata/SelfFollowingROS2/depend/src/dlrobot_robot_msg', 'symlink_install': False, 'test_result_base': None}
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.842s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/userdata/SelfFollowingROS2/depend/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/userdata/SelfFollowingROS2/depend/install/serial', 'merge_install': False, 'path': '/userdata/SelfFollowingROS2/depend/src/serial_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.843s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.845s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.845s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/userdata/SelfFollowingROS2/depend/src/ackermann_msgs-ros2' with build type 'ament_cmake'
+[0.845s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/userdata/SelfFollowingROS2/depend/src/ackermann_msgs-ros2'
+[0.849s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.849s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.849s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.854s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/userdata/SelfFollowingROS2/depend/src/dlrobot_robot_msg' with build type 'ament_cmake'
+[0.854s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/userdata/SelfFollowingROS2/depend/src/dlrobot_robot_msg'
+[0.855s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.855s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.860s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/userdata/SelfFollowingROS2/depend/src/serial_ros2' with build type 'ament_cmake'
+[0.861s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/userdata/SelfFollowingROS2/depend/src/serial_ros2'
+[0.861s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.861s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.881s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /userdata/SelfFollowingROS2/depend/src/ackermann_msgs-ros2 -DCMAKE_INSTALL_PREFIX=/userdata/SelfFollowingROS2/depend/install/ackermann_msgs
+[0.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /userdata/SelfFollowingROS2/depend/src/dlrobot_robot_msg -DCMAKE_INSTALL_PREFIX=/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg
+[0.905s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/userdata/SelfFollowingROS2/depend/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /userdata/SelfFollowingROS2/depend/src/serial_ros2 -DCMAKE_INSTALL_PREFIX=/userdata/SelfFollowingROS2/depend/install/serial
+[2.957s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/userdata/SelfFollowingROS2/depend/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /userdata/SelfFollowingROS2/depend/src/serial_ros2 -DCMAKE_INSTALL_PREFIX=/userdata/SelfFollowingROS2/depend/install/serial
+[2.962s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/userdata/SelfFollowingROS2/depend/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /userdata/SelfFollowingROS2/depend/build/serial -- -j8 -l8
+[4.054s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/userdata/SelfFollowingROS2/depend/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /userdata/SelfFollowingROS2/depend/build/serial -- -j8 -l8
+[4.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/userdata/SelfFollowingROS2/depend/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /userdata/SelfFollowingROS2/depend/build/serial
+[4.113s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[4.116s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/userdata/SelfFollowingROS2/depend/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /userdata/SelfFollowingROS2/depend/build/serial
+[4.125s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial' for CMake module files
+[4.128s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial' for CMake config files
+[4.129s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[4.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[4.132s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[4.134s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[4.139s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial/lib'
+[4.140s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial/bin'
+[4.140s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial/lib/pkgconfig/serial.pc'
+[4.142s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial/lib/python3.10/site-packages'
+[4.144s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial/bin'
+[4.146s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/package.ps1'
+[4.153s] INFO:colcon.colcon_core.shell:Creating package descriptor '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/package.dsv'
+[4.157s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/package.sh'
+[4.159s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/package.bash'
+[4.161s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/package.zsh'
+[4.162s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/userdata/SelfFollowingROS2/depend/install/serial/share/colcon-core/packages/serial)
+[4.163s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[4.164s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial' for CMake module files
+[4.164s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial' for CMake config files
+[4.165s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[4.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[4.166s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[4.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[4.167s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial/lib'
+[4.168s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial/bin'
+[4.168s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial/lib/pkgconfig/serial.pc'
+[4.168s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial/lib/python3.10/site-packages'
+[4.168s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/serial/bin'
+[4.169s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/package.ps1'
+[4.170s] INFO:colcon.colcon_core.shell:Creating package descriptor '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/package.dsv'
+[4.170s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/package.sh'
+[4.171s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/package.bash'
+[4.172s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/serial/share/serial/package.zsh'
+[4.172s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/userdata/SelfFollowingROS2/depend/install/serial/share/colcon-core/packages/serial)
+[5.165s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /userdata/SelfFollowingROS2/depend/src/ackermann_msgs-ros2 -DCMAKE_INSTALL_PREFIX=/userdata/SelfFollowingROS2/depend/install/ackermann_msgs
+[5.167s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /userdata/SelfFollowingROS2/depend/build/ackermann_msgs -- -j8 -l8
+[5.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /userdata/SelfFollowingROS2/depend/src/dlrobot_robot_msg -DCMAKE_INSTALL_PREFIX=/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg
+[5.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg -- -j8 -l8
+[10.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg -- -j8 -l8
+[10.744s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg
+[10.894s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dlrobot_robot_msg)
+[10.895s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg' for CMake module files
+[10.897s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg' for CMake config files
+[10.901s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg
+[10.902s] Level 1:colcon.colcon_core.shell:create_environment_hook('dlrobot_robot_msg', 'cmake_prefix_path')
+[10.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/hook/cmake_prefix_path.ps1'
+[10.905s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/hook/cmake_prefix_path.dsv'
+[10.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/hook/cmake_prefix_path.sh'
+[10.910s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/lib'
+[10.910s] Level 1:colcon.colcon_core.shell:create_environment_hook('dlrobot_robot_msg', 'ld_library_path_lib')
+[10.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/hook/ld_library_path_lib.ps1'
+[10.913s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/hook/ld_library_path_lib.dsv'
+[10.914s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/hook/ld_library_path_lib.sh'
+[10.916s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/bin'
+[10.916s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/lib/pkgconfig/dlrobot_robot_msg.pc'
+[10.917s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/lib/python3.10/site-packages'
+[10.918s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/bin'
+[10.920s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/package.ps1'
+[10.922s] INFO:colcon.colcon_core.shell:Creating package descriptor '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/package.dsv'
+[10.923s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/package.sh'
+[10.925s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/package.bash'
+[10.926s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/package.zsh'
+[10.927s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/colcon-core/packages/dlrobot_robot_msg)
+[10.930s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dlrobot_robot_msg)
+[10.931s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg' for CMake module files
+[10.934s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg' for CMake config files
+[10.935s] Level 1:colcon.colcon_core.shell:create_environment_hook('dlrobot_robot_msg', 'cmake_prefix_path')
+[10.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/hook/cmake_prefix_path.ps1'
+[10.939s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/hook/cmake_prefix_path.dsv'
+[10.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/hook/cmake_prefix_path.sh'
+[10.942s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/lib'
+[10.943s] Level 1:colcon.colcon_core.shell:create_environment_hook('dlrobot_robot_msg', 'ld_library_path_lib')
+[10.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/hook/ld_library_path_lib.ps1'
+[10.945s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/hook/ld_library_path_lib.dsv'
+[10.946s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/hook/ld_library_path_lib.sh'
+[10.947s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/bin'
+[10.947s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/lib/pkgconfig/dlrobot_robot_msg.pc'
+[10.948s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/lib/python3.10/site-packages'
+[10.948s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/bin'
+[10.949s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/package.ps1'
+[10.951s] INFO:colcon.colcon_core.shell:Creating package descriptor '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/package.dsv'
+[10.953s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/package.sh'
+[10.954s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/package.bash'
+[10.956s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/dlrobot_robot_msg/package.zsh'
+[10.957s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/userdata/SelfFollowingROS2/depend/install/dlrobot_robot_msg/share/colcon-core/packages/dlrobot_robot_msg)
+[11.879s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /userdata/SelfFollowingROS2/depend/build/ackermann_msgs -- -j8 -l8
+[11.886s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /userdata/SelfFollowingROS2/depend/build/ackermann_msgs
+[12.032s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ackermann_msgs)
+[12.033s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs' for CMake module files
+[12.034s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs' for CMake config files
+[12.035s] Level 1:colcon.colcon_core.shell:create_environment_hook('ackermann_msgs', 'cmake_prefix_path')
+[12.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/hook/cmake_prefix_path.ps1'
+[12.036s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/hook/cmake_prefix_path.dsv'
+[12.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/hook/cmake_prefix_path.sh'
+[12.038s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib'
+[12.038s] Level 1:colcon.colcon_core.shell:create_environment_hook('ackermann_msgs', 'ld_library_path_lib')
+[12.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/hook/ld_library_path_lib.ps1'
+[12.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /userdata/SelfFollowingROS2/depend/build/ackermann_msgs
+[12.046s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/hook/ld_library_path_lib.dsv'
+[12.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/hook/ld_library_path_lib.sh'
+[12.048s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/bin'
+[12.048s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/pkgconfig/ackermann_msgs.pc'
+[12.049s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/python3.10/site-packages'
+[12.050s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/bin'
+[12.050s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/package.ps1'
+[12.051s] INFO:colcon.colcon_core.shell:Creating package descriptor '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/package.dsv'
+[12.052s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/package.sh'
+[12.052s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/package.bash'
+[12.053s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/package.zsh'
+[12.053s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/colcon-core/packages/ackermann_msgs)
+[12.054s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ackermann_msgs)
+[12.055s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs' for CMake module files
+[12.057s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs' for CMake config files
+[12.058s] Level 1:colcon.colcon_core.shell:create_environment_hook('ackermann_msgs', 'cmake_prefix_path')
+[12.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/hook/cmake_prefix_path.ps1'
+[12.061s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/hook/cmake_prefix_path.dsv'
+[12.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/hook/cmake_prefix_path.sh'
+[12.065s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib'
+[12.065s] Level 1:colcon.colcon_core.shell:create_environment_hook('ackermann_msgs', 'ld_library_path_lib')
+[12.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/hook/ld_library_path_lib.ps1'
+[12.068s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/hook/ld_library_path_lib.dsv'
+[12.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/hook/ld_library_path_lib.sh'
+[12.071s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/bin'
+[12.071s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/pkgconfig/ackermann_msgs.pc'
+[12.071s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/lib/python3.10/site-packages'
+[12.072s] Level 1:colcon.colcon_core.environment:checking '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/bin'
+[12.073s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/package.ps1'
+[12.075s] INFO:colcon.colcon_core.shell:Creating package descriptor '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/package.dsv'
+[12.076s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/package.sh'
+[12.077s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/package.bash'
+[12.078s] INFO:colcon.colcon_core.shell:Creating package script '/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/ackermann_msgs/package.zsh'
+[12.079s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/userdata/SelfFollowingROS2/depend/install/ackermann_msgs/share/colcon-core/packages/ackermann_msgs)
+[12.079s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.080s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.080s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.081s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.095s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.096s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.096s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.295s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.296s] INFO:colcon.colcon_core.shell:Creating prefix script '/userdata/SelfFollowingROS2/depend/install/local_setup.ps1'
+[12.301s] INFO:colcon.colcon_core.shell:Creating prefix util module '/userdata/SelfFollowingROS2/depend/install/_local_setup_util_ps1.py'
+[12.304s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/userdata/SelfFollowingROS2/depend/install/setup.ps1'
+[12.307s] INFO:colcon.colcon_core.shell:Creating prefix script '/userdata/SelfFollowingROS2/depend/install/local_setup.sh'
+[12.308s] INFO:colcon.colcon_core.shell:Creating prefix util module '/userdata/SelfFollowingROS2/depend/install/_local_setup_util_sh.py'
+[12.309s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/userdata/SelfFollowingROS2/depend/install/setup.sh'
+[12.311s] INFO:colcon.colcon_core.shell:Creating prefix script '/userdata/SelfFollowingROS2/depend/install/local_setup.bash'
+[12.312s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/userdata/SelfFollowingROS2/depend/install/setup.bash'
+[12.313s] INFO:colcon.colcon_core.shell:Creating prefix script '/userdata/SelfFollowingROS2/depend/install/local_setup.zsh'
+[12.314s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/userdata/SelfFollowingROS2/depend/install/setup.zsh'

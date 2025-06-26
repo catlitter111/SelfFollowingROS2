@@ -1,0 +1,6 @@
+Invoking command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /userdata/SelfFollowingROS2/depend/src/ackermann_msgs-ros2 -DCMAKE_INSTALL_PREFIX=/userdata/SelfFollowingROS2/depend/install/ackermann_msgs
+Invoked command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /userdata/SelfFollowingROS2/depend/src/ackermann_msgs-ros2 -DCMAKE_INSTALL_PREFIX=/userdata/SelfFollowingROS2/depend/install/ackermann_msgs
+Invoking command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /userdata/SelfFollowingROS2/depend/build/ackermann_msgs -- -j8 -l8
+Invoked command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /userdata/SelfFollowingROS2/depend/build/ackermann_msgs -- -j8 -l8
+Invoking command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /userdata/SelfFollowingROS2/depend/build/ackermann_msgs
+Invoked command in '/userdata/SelfFollowingROS2/depend/build/ackermann_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /userdata/SelfFollowingROS2/depend/build/ackermann_msgs

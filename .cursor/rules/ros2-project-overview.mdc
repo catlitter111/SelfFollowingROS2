@@ -1,0 +1,62 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# ROS2 SelfFollowing机器人项目概述
+
+这是一个基于ROS2 Humble的自主跟随机器人项目，使用立体视觉进行人体检测和跟随。
+
+## 项目结构
+
+### 主要工作空间
+- **SelfFollowingROS2/**: 主要的ROS2工作空间
+  - **src/**: 包含所有自定义ROS2包
+  - [install/](mdc:SelfFollowingROS2/install): 编译后的包安装目录
+  - [log/](mdc:SelfFollowingROS2/log): 构建和运行日志
+
+### 依赖工作空间  
+- **depend/**: 第三方依赖包工作空间
+  - [src/](mdc:depend/src): 依赖包源码
+  - [install/](mdc:depend/install): 依赖包安装目录
+
+## 核心包说明
+
+### stereo_vision_ros2
+立体视觉处理包，负责：
+- RKNN模型推理进行人体检测
+- 立体视觉距离计算
+- 人体位置确定服务
+- 可视化功能
+
+关键文件：
+- [package.xml](mdc:SelfFollowingROS2/src/stereo_vision_ros2/package.xml): 包依赖配置
+- [setup.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/setup.py): Python包设置
+- [rknn_detect_node.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/stereo_vision_ros2/rknn_detect_node.py): 核心检测节点
+
+### turn_on_dlrobot_robot
+机器人控制包，负责：
+- 底盘驱动和控制
+- 运动学计算
+- 速度命令转换
+
+关键文件：
+- [CMakeLists.txt](mdc:SelfFollowingROS2/src/turn_on_dlrobot_robot/CMakeLists.txt): C++构建配置
+- [dlrobot_robot.cpp](mdc:SelfFollowingROS2/src/turn_on_dlrobot_robot/src/dlrobot_robot.cpp): 主要驱动代码
+- [cmd_vel_to_ackermann_drive.py](mdc:SelfFollowingROS2/src/turn_on_dlrobot_robot/scripts/cmd_vel_to_ackermann_drive.py): 速度转换脚本
+
+### stereo_vision_interfaces
+服务接口定义包：
+- [DetectImageWithConfidence.srv](mdc:SelfFollowingROS2/src/stereo_vision_interfaces/srv/DetectImageWithConfidence.srv): 图像检测服务
+- [DetermineBodyPosition.srv](mdc:SelfFollowingROS2/src/stereo_vision_interfaces/srv/DetermineBodyPosition.srv): 身体位置服务
+- [GetDistance.srv](mdc:SelfFollowingROS2/src/stereo_vision_interfaces/srv/GetDistance.srv): 距离获取服务
+
+## 启动文件
+- [stereo_vision.launch.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/launch/stereo_vision.launch.py): 立体视觉系统启动
+- [tank.launch.py](mdc:SelfFollowingROS2/src/turn_on_dlrobot_robot/launch/tank.launch.py): 机器人底盘启动
+
+## 系统测试
+- [test_system.sh](mdc:SelfFollowingROS2/test_system.sh): 系统集成测试脚本
+- [validate_fixes.py](mdc:SelfFollowingROS2/validate_fixes.py): 修复验证脚本
+
+

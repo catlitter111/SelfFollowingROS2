@@ -1,0 +1,6 @@
+setup.py
+dlrobot_robot_msg/__init__.py
+dlrobot_robot_msg.egg-info/PKG-INFO
+dlrobot_robot_msg.egg-info/SOURCES.txt
+dlrobot_robot_msg.egg-info/dependency_links.txt
+dlrobot_robot_msg.egg-info/top_level.txt

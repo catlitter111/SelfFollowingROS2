@@ -1,0 +1,152 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# SelfFollowing机器人项目架构
+
+## 系统整体架构
+
+这是一个基于ROS2 Humble的自主跟随机器人系统，采用模块化设计：
+
+```
+立体摄像头 → 人体检测 → 位置确定 → 路径规划 → 运动控制 → 机器人移动
+    ↓           ↓          ↓          ↓          ↓          ↓
+  图像采集   RKNN推理   距离计算   决策算法   速度转换   底盘驱动
+```
+
+## 包依赖关系图
+
+### 主工作空间 (SelfFollowingROS2)
+```
+stereo_vision_ros2 ←─── stereo_vision_interfaces
+        ↓                        ↓
+    感知层                    接口层
+        ↓                        ↓
+turn_on_dlrobot_robot ←─── 控制层
+```
+
+### 依赖工作空间 (depend)
+```
+ackermann_msgs ←─── 运动控制消息
+dlrobot_robot_msg ←─── 机器人状态消息  
+serial ←─── 串口通信库
+```
+
+## 数据流架构
+
+### 感知数据流
+1. **图像采集**: 立体摄像头 → `/image_left`, `/image_right`
+2. **人体检测**: RKNN推理 → `/detection_results`
+3. **距离计算**: 立体视觉 → `/distance_info`
+4. **位置确定**: 3D定位 → `/target_position`
+
+### 控制数据流
+1. **决策规划**: 目标跟踪 → `/cmd_vel`
+2. **速度转换**: Twist → Ackermann → `/ackermann_cmd`
+3. **底盘控制**: 驱动命令 → 串口通信
+4. **状态反馈**: 里程计 → `/odom`, `/robot_position`
+
+## 核心服务架构
+
+### 立体视觉服务
+- **DetectImageWithConfidence**: 图像检测服务
+  - 输入: 图像数据
+  - 输出: 检测框 + 置信度
+  - 提供者: [rknn_detect_node.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/stereo_vision_ros2/rknn_detect_node.py)
+
+- **DetermineBodyPosition**: 身体位置服务
+  - 输入: 检测结果
+  - 输出: 3D位置坐标
+  - 提供者: [stereo_vision_node.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/stereo_vision_ros2/stereo_vision_node.py)
+
+- **GetDistance**: 距离计算服务
+  - 输入: 像素坐标
+  - 输出: 实际距离
+  - 提供者: 立体视觉模块
+
+## 关键话题架构
+
+### 图像话题
+- `/image_left/image_raw`: 左摄像头图像
+- `/image_right/image_raw`: 右摄像头图像  
+- `/camera_info_left`: 左摄像头标定信息
+- `/camera_info_right`: 右摄像头标定信息
+
+### 检测结果话题
+- `/detection_results`: RKNN检测结果
+- `/target_position`: 目标3D位置
+- `/distance_info`: 距离信息
+
+### 控制话题
+- `/cmd_vel` (geometry_msgs/Twist): 速度命令
+- `/ackermann_cmd` (ackermann_msgs/AckermannDriveStamped): 阿克曼驱动命令
+
+### 状态话题
+- `/odom` (nav_msgs/Odometry): 里程计信息
+- `/robot_position` (自定义Position): 机器人位置
+- `/robot_status`: 机器人状态信息
+
+## 配置文件架构
+
+### 包配置
+- [stereo_vision_ros2/package.xml](mdc:SelfFollowingROS2/src/stereo_vision_ros2/package.xml): 视觉包依赖
+- [turn_on_dlrobot_robot/package.xml](mdc:SelfFollowingROS2/src/turn_on_dlrobot_robot/package.xml): 控制包依赖
+- [stereo_vision_interfaces/package.xml](mdc:SelfFollowingROS2/src/stereo_vision_interfaces/package.xml): 接口包依赖
+
+### 构建配置
+- [setup.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/setup.py): Python包构建
+- [CMakeLists.txt](mdc:SelfFollowingROS2/src/turn_on_dlrobot_robot/CMakeLists.txt): C++包构建
+- [CMakeLists.txt](mdc:SelfFollowingROS2/src/stereo_vision_interfaces/CMakeLists.txt): 接口包构建
+
+### 运行时配置
+- [stereo_vision.rviz](mdc:SelfFollowingROS2/src/stereo_vision_ros2/config/stereo_vision.rviz): 可视化配置
+- [best3.rknn](mdc:SelfFollowingROS2/src/stereo_vision_ros2/data/best3.rknn): AI模型文件
+
+## 启动架构
+
+### 系统启动顺序
+1. **依赖环境**: `cd depend && source install/setup.bash`
+2. **主环境**: `cd SelfFollowingROS2 && source install/setup.bash`
+3. **底盘启动**: `ros2 launch turn_on_dlrobot_robot tank.launch.py`
+4. **视觉启动**: `ros2 launch stereo_vision_ros2 stereo_vision.launch.py`
+
+### 启动文件层级
+- [tank.launch.py](mdc:SelfFollowingROS2/src/turn_on_dlrobot_robot/launch/tank.launch.py): 底盘系统
+- [stereo_vision.launch.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/launch/stereo_vision.launch.py): 完整视觉系统
+- [stereo_vision_detection.launch.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/launch/stereo_vision_detection.launch.py): 仅检测功能
+
+## 测试架构
+
+### 系统级测试
+- [test_system.sh](mdc:SelfFollowingROS2/test_system.sh): 完整系统集成测试
+- [validate_fixes.py](mdc:SelfFollowingROS2/validate_fixes.py): 修复验证脚本
+
+### 模块级测试
+- [test_rknn_detect.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/test/test_rknn_detect.py): RKNN检测测试
+- [test_services.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/test/test_services.py): 服务功能测试
+- [test_distance_client.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/test/test_distance_client.py): 距离客户端测试
+
+## 开发和调试工具
+
+### 可视化工具
+- **RViz2**: 3D可视化，使用配置文件 [stereo_vision.rviz](mdc:SelfFollowingROS2/src/stereo_vision_ros2/config/stereo_vision.rviz)
+- **rqt_graph**: 节点连接图
+- **rqt_topic**: 话题监控
+- **rqt_service_caller**: 服务调用测试
+
+### 调试命令
+- `ros2 doctor`: 系统健康检查
+- `ros2 node list`: 活动节点列表
+- `ros2 topic echo <topic>`: 话题数据监控
+- `ros2 service call <service>`: 服务调用测试
+
+## 部署注意事项
+
+1. **硬件依赖**: 需要支持RKNN推理的硬件平台
+2. **摄像头配置**: 立体摄像头需要正确标定
+3. **串口权限**: 机器人底盘串口需要适当权限设置
+4. **环境变量**: 正确设置ROS2相关环境变量
+5. **依赖顺序**: 严格按照依赖顺序构建和启动
+
+

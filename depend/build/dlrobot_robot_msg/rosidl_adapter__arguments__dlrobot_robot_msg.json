@@ -1,0 +1,6 @@
+{
+  "package_name": "dlrobot_robot_msg",
+  "non_idl_tuples": [
+    "/userdata/SelfFollowingROS2/depend/src/dlrobot_robot_msg:msg/Data.msg"
+  ]
+}

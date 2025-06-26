@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f0eb0c15634fb57ad798.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "dlrobot_robot_msg__py",
+					"jsonFile" : "directory-dlrobot_robot_msg__py-3c4710bc2ff0b71db47f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg/dlrobot_robot_msg__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "dlrobot_robot_msg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_dlrobot_robot_msg_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_dlrobot_robot_msg_egg-4d123b05790a52d0aa6e.json",
+					"name" : "ament_cmake_python_build_dlrobot_robot_msg_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_dlrobot_robot_msg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_dlrobot_robot_msg-3470113c9e4c51adedab.json",
+					"name" : "ament_cmake_python_copy_dlrobot_robot_msg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg-badbec9ca4b828e3dda4.json",
+					"name" : "dlrobot_robot_msg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg__cpp-9c16ac54a3558cb0283b.json",
+					"name" : "dlrobot_robot_msg__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "dlrobot_robot_msg__py::@18582346d5b937e0354b",
+					"jsonFile" : "target-dlrobot_robot_msg__py-07f889325b54adf2286b.json",
+					"name" : "dlrobot_robot_msg__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg__rosidl_generator_c-c93dedc16acea31ce852.json",
+					"name" : "dlrobot_robot_msg__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg__rosidl_generator_py-a26ba798685fb05cc04f.json",
+					"name" : "dlrobot_robot_msg__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg__rosidl_typesupport_c-875f4024b24af0bc93c5.json",
+					"name" : "dlrobot_robot_msg__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg__rosidl_typesupport_c__pyext-bd6aa571c5c05828e563.json",
+					"name" : "dlrobot_robot_msg__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg__rosidl_typesupport_cpp-9160306f6b6903ec3619.json",
+					"name" : "dlrobot_robot_msg__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg__rosidl_typesupport_fastrtps_c-820243faf9653484c62d.json",
+					"name" : "dlrobot_robot_msg__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg__rosidl_typesupport_fastrtps_c__pyext-44cf090ebfdc854862dc.json",
+					"name" : "dlrobot_robot_msg__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg__rosidl_typesupport_fastrtps_cpp-d37e5fcfbb6845f496dc.json",
+					"name" : "dlrobot_robot_msg__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg__rosidl_typesupport_introspection_c-bbde7b251fac132840f3.json",
+					"name" : "dlrobot_robot_msg__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg__rosidl_typesupport_introspection_c__pyext-5e85efc9baf11b5e2d48.json",
+					"name" : "dlrobot_robot_msg__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg__rosidl_typesupport_introspection_cpp-d81e3feeef21e4164eb6.json",
+					"name" : "dlrobot_robot_msg__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dlrobot_robot_msg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlrobot_robot_msg_uninstall-86192e18e725fac77527.json",
+					"name" : "dlrobot_robot_msg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-dce1640c0883a5d21cc5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/userdata/SelfFollowingROS2/depend/build/dlrobot_robot_msg",
+		"source" : "/userdata/SelfFollowingROS2/depend/src/dlrobot_robot_msg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

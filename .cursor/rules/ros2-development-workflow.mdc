@@ -1,0 +1,131 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# ROS2 Humble 开发工作流程
+
+## 强制性开发流程
+
+**重要：每次代码修改后都必须执行以下步骤！**
+
+### 1. 构建工作空间
+```bash
+# 对于主工作空间
+cd SelfFollowingROS2
+colcon build --packages-select <package_name>
+
+# 对于依赖工作空间  
+cd depend
+colcon build --packages-select <dependency_name>
+```
+
+### 2. 激活工作空间
+```bash
+# 激活依赖工作空间
+cd depend && source install/setup.bash
+
+# 激活主工作空间
+cd SelfFollowingROS2 && source install/setup.bash
+```
+
+### 3. 必须测试修改
+```bash
+# 测试节点启动
+ros2 run <package_name> <node_name>
+
+# 测试启动文件
+ros2 launch <package_name> <launch_file>
+
+# 检查话题
+ros2 topic list
+ros2 topic echo <topic_name>
+
+# 检查服务
+ros2 service list
+ros2 service call <service_name> <service_type> <arguments>
+```
+
+## 包特定构建命令
+
+### stereo_vision_ros2 (Python包)
+```bash
+cd SelfFollowingROS2
+colcon build --packages-select stereo_vision_ros2
+source install/setup.bash
+ros2 run stereo_vision_ros2 rknn_detect_node
+```
+
+### turn_on_dlrobot_robot (C++包)
+```bash
+cd SelfFollowingROS2  
+colcon build --packages-select turn_on_dlrobot_robot
+source install/setup.bash
+ros2 run turn_on_dlrobot_robot dlrobot_robot
+```
+
+### stereo_vision_interfaces (接口包)
+```bash
+cd SelfFollowingROS2
+colcon build --packages-select stereo_vision_interfaces
+# 接口包构建后其他包需要重新构建
+colcon build --packages-select stereo_vision_ros2
+```
+
+## 依赖包构建
+
+如果修改了依赖包，需要按顺序构建：
+
+```bash
+# 1. 构建依赖
+cd depend
+colcon build --packages-select ackermann_msgs dlrobot_robot_msg serial
+
+# 2. 激活依赖环境
+source install/setup.bash
+
+# 3. 构建主工作空间
+cd ../SelfFollowingROS2
+colcon build
+
+# 4. 激活主环境
+source install/setup.bash
+```
+
+## 调试和验证
+
+### 检查构建状态
+```bash
+echo "构建退出代码: $?"  # 应该为0表示成功
+```
+
+### 系统级测试
+使用项目提供的测试脚本：
+- [test_system.sh](mdc:SelfFollowingROS2/test_system.sh): 完整系统测试
+- [validate_fixes.py](mdc:SelfFollowingROS2/validate_fixes.py): 验证修复
+
+### 常见问题检查
+```bash
+# 检查节点状态
+ros2 node list
+
+# 检查话题连接
+rqt_graph
+
+# 检查系统健康
+ros2 doctor
+
+# 启用调试日志
+export RCUTILS_LOGGING_SEVERITY=DEBUG
+```
+
+## 修改后必做检查清单
+- [ ] `colcon build` 成功 (退出代码 0)
+- [ ] `source install/setup.bash` 已执行
+- [ ] 相关节点可以启动
+- [ ] 话题正确发布/订阅
+- [ ] 服务正常响应
+- [ ] 无错误或警告消息
+- [ ] 运行系统测试脚本验证
+
+

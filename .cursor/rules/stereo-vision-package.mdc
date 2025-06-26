@@ -1,0 +1,112 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# stereo_vision_ros2 包详解
+
+这是项目的核心视觉处理包，负责人体检测、距离计算和目标跟踪。
+
+## 包结构和关键文件
+
+### 核心Python模块
+- [rknn_detect_node.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/stereo_vision_ros2/rknn_detect_node.py): 主要的RKNN检测节点
+- [human_detection_visualizer.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/stereo_vision_ros2/human_detection_visualizer.py): 检测结果可视化
+- [stereo_vision_node.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/stereo_vision_ros2/stereo_vision_node.py): 立体视觉主节点
+- [__init__.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/stereo_vision_ros2/__init__.py): 模块初始化
+
+### 配置文件
+- [package.xml](mdc:SelfFollowingROS2/src/stereo_vision_ros2/package.xml): ROS2包依赖配置
+- [setup.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/setup.py): Python包安装配置
+
+### 启动文件
+- [stereo_vision.launch.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/launch/stereo_vision.launch.py): 完整系统启动
+- [stereo_vision_detection.launch.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/launch/stereo_vision_detection.launch.py): 仅检测功能启动
+
+### 模型和配置
+- [best3.rknn](mdc:SelfFollowingROS2/src/stereo_vision_ros2/data/best3.rknn): RKNN推理模型文件
+- [stereo_vision.rviz](mdc:SelfFollowingROS2/src/stereo_vision_ros2/config/stereo_vision.rviz): RViz可视化配置
+
+### 测试文件
+- [test_rknn_detect.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/test/test_rknn_detect.py): RKNN检测测试
+- [test_services.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/test/test_services.py): 服务测试
+- [test_distance_client.py](mdc:SelfFollowingROS2/src/stereo_vision_ros2/test/test_distance_client.py): 距离客户端测试
+
+## 服务接口
+
+该包使用 [stereo_vision_interfaces](mdc:SelfFollowingROS2/src/stereo_vision_interfaces) 定义的服务：
+
+### DetectImageWithConfidence
+- **文件**: [DetectImageWithConfidence.srv](mdc:SelfFollowingROS2/src/stereo_vision_interfaces/srv/DetectImageWithConfidence.srv)
+- **功能**: 对输入图像进行人体检测，返回检测结果和置信度
+- **使用**: RKNN检测节点提供此服务
+
+### DetermineBodyPosition  
+- **文件**: [DetermineBodyPosition.srv](mdc:SelfFollowingROS2/src/stereo_vision_interfaces/srv/DetermineBodyPosition.srv)
+- **功能**: 根据检测结果确定人体在3D空间中的位置
+- **使用**: 立体视觉节点提供此服务
+
+### GetDistance
+- **文件**: [GetDistance.srv](mdc:SelfFollowingROS2/src/stereo_vision_interfaces/srv/GetDistance.srv)  
+- **功能**: 计算到目标的距离
+- **使用**: 距离计算服务
+
+## 开发和测试流程
+
+### 构建包
+```bash
+cd SelfFollowingROS2
+colcon build --packages-select stereo_vision_interfaces stereo_vision_ros2
+source install/setup.bash
+```
+
+### 运行检测节点
+```bash
+ros2 run stereo_vision_ros2 rknn_detect_node
+```
+
+### 启动完整系统
+```bash
+ros2 launch stereo_vision_ros2 stereo_vision.launch.py
+```
+
+### 测试服务
+```bash
+# 测试检测服务
+ros2 service call /detect_image_with_confidence stereo_vision_interfaces/srv/DetectImageWithConfidence
+
+# 测试位置服务  
+ros2 service call /determine_body_position stereo_vision_interfaces/srv/DetermineBodyPosition
+
+# 测试距离服务
+ros2 service call /get_distance stereo_vision_interfaces/srv/GetDistance
+```
+
+## 重要说明
+
+1. **模型文件**: [best3.rknn](mdc:SelfFollowingROS2/src/stereo_vision_ros2/data/best3.rknn) 是预训练的RKNN模型，用于人体检测
+2. **依赖关系**: 这个包依赖于 stereo_vision_interfaces，修改接口后需要重新构建
+3. **硬件要求**: RKNN推理需要支持的硬件平台
+4. **摄像头配置**: 需要正确配置立体摄像头参数
+
+## 调试技巧
+
+### 查看节点信息
+```bash
+ros2 node info /rknn_detect_node
+ros2 node info /stereo_vision_node
+```
+
+### 监控话题
+```bash
+ros2 topic list
+ros2 topic echo /detection_results
+ros2 topic echo /distance_info
+```
+
+### RViz可视化
+```bash
+rviz2 -d SelfFollowingROS2/src/stereo_vision_ros2/config/stereo_vision.rviz
+```
+
+
